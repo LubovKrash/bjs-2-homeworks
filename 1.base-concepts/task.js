@@ -2,14 +2,14 @@
 
 function solveEquation(a, b, c) {
 	let arr = [];
-	let dis = b ** -4 * a * c;
-	if (dis === 0) {
+  let discriminant = b ** -4 * a * c; // Вычисляем дискриминант
+  if (discriminant < 0) {
+    return arr [];
+  } else if (discriminant === 0) {
 		arr[0] = -b / (2 * a);
-	} else if (dis > 0) {
-		arr[0] = (-b + Math.sqrt(d)) / (-b - Math.sqrt(d)) / (2 * a);
-		arr[1] = (-b - Math.sqrt(d)) / (2 * a)
-	} else if (dis < 0) {
-		arr = []
+	} else {
+		arr[0] = (-b + Math.sqrt(discriminant)) / (2 * a);
+		arr[1] = (-b - Math.sqrt(discriminant)) / (2 * a);
 	}
 	return arr;
 }
