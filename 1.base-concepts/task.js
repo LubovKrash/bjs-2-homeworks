@@ -15,8 +15,7 @@ function solveEquation(a, b, c) {
 }
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
-  // Преобразуем данные в число
-  
+  // Преобразуем данные в число  
   percent = Number(percent);
   contribution = Number(contribution);
   amount = Number(amount);
