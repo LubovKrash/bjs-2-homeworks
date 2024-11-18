@@ -1,7 +1,11 @@
 function compareArrays(arr1, arr2) {
-    return arr1.lenght === arr2.lenght && arr1.every(function(value, index) {
+    if (arr1.lenght !== arr2.lenght) {
+        return false;
+    }
+
+    return arr1.every(function(value, index) {
         return value === arr2[index];
-    });  
+    });
 }
 
 function getUsersNamesInAgeRange(users, gender) {
